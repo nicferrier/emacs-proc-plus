@@ -29,7 +29,7 @@
   (let ((e-val (substitute-in-file-name value)))
     (if (member e-val (split-string (getenv var) ":"))
         (getenv var)
-        (setenv var (concat (getenv var) ":" e-val)))))
+      (setenv var (concat e-val ":" (getenv var))))))
 
 (provide 'proc-plus)
 
