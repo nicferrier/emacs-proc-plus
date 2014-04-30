@@ -19,9 +19,9 @@
                 filename t)))
       (should
        (equal (proc+env-add-path "PATH" "$GOROOT/bin")
-              "/usr/bin:/bin:/usr/local/bin:/home/test/go/bin"))
+              "/home/test/go/bin:/usr/bin:/bin:/usr/local/bin"))
       (should
        (equal (proc+env-add-path "PATH" "$GOROOT/bin")
-              "/usr/bin:/bin:/usr/local/bin:/home/test/go/bin")))))
+              "/home/test/go/bin:/usr/bin:/bin:/usr/local/bin")))))
 
 ;;; proc-plus-tests.el ends here
