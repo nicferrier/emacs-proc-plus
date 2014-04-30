@@ -1,0 +1,6 @@
+I've got a lot of little process helper type functions.
+
+I could make packages for each of them or try and combine them.
+
+The first thing here is a tiny thing for adding env vars
+together. Very simple but useful.
